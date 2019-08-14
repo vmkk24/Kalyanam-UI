@@ -92,7 +92,7 @@ motherTongue: String;
          "motherTongue": this.registerForm.value.motherTongue,
       };
     
-    this.http.post('http://10.117.189.99:9800/matrimony/api/register', reqObj).subscribe((response) => {
+    this.http.post('http://13.235.0.159:9800/matrimony/api/register', reqObj).subscribe((response) => {
         if (response) {
             this.data = response;
             alert(response['message'])
